@@ -62,6 +62,7 @@
 			<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
 		</footer>
 		<script src="{% static 'todomvc-common/base.js' %}"></script>
-		<script data-main="{% static 'main' %}" src="{% static 'requirejs/require.js' %}"></script>
+{#		<script data-main="{% static 'main' %}" src="{% static 'requirejs/require.js' %}"></script>#}
+        <script src="{% static 'bundles/bundle.js' %}"></script>
 	</body>
 </html>
