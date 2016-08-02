@@ -4,4 +4,8 @@
 - We did minification, but no bundling. Possible with RequireJS, but somewhat painful to configure for a multipage file.
 - Webpack integrates nicely with Babel, which lets us write ES6 today (more on that later)
 - However, a compilation step is required.
-- 
+
+Hands-on example:
+- A Django app with a single page
+- Example is RequireJS + Angular from TodoMVC
+- Angular and the app itself are not important. Don't worry about it.
