@@ -2,19 +2,11 @@
 'use strict';
 
 require('todomvc-common/base');
+var angular = require('angular');
+var todoCtrl = require('controllers/todo');
+var todoFocusDir = require('directives/todoFocus');
+var todoEscapeDir = require('directives/todoEscape');
+var todoStorageSrv = require('services/todoStorage');
 
-require([
-	'angular'
-], function (angular) {
-	require([
-		'controllers/todo', 
-		'directives/todoFocus', 
-		'directives/todoEscape',
-		'services/todoStorage'
-	], function (todoCtrl, todoFocusDir, todoEscapeDir, todoStorageSrv) {
-		angular
-			.module('todomvc', [todoFocusDir, todoEscapeDir, todoStorageSrv])
-			.controller('TodoController', todoCtrl);
-		angular.bootstrap(document, ['todomvc']);			
-	});	
-});
+angular.module('todomvc', [todoFocusDir, todoEscapeDir, todoStorageSrv]).controller('TodoController', todoCtrl);
+angular.bootstrap(document, ['todomvc']);
