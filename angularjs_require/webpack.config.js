@@ -10,7 +10,7 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'js', 'bundles'),
         filename: 'bundle.js',
-        publicPath: '/static/bundles/'
+        publicPath: 'http://localhost:3000/static/bundles/'
     },
 
     resolve: {
