@@ -1,0 +1,7 @@
+- Why Webpack? Minify and Bundle files
+- Module systems (AMD, CommonJS, UMD, ES6 module system)
+- We used to use RequireJS. Some kind of organization, works directly in the browser. 
+- We did minification, but no bundling. Possible with RequireJS, but somewhat painful to configure for a multipage file.
+- Webpack integrates nicely with Babel, which lets us write ES6 today (more on that later)
+- However, a compilation step is required.
+- 
