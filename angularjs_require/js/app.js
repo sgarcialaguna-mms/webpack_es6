@@ -1,6 +1,8 @@
 /*global require*/
 'use strict';
 
+require('todomvc-common/base');
+
 require([
 	'angular'
 ], function (angular) {
