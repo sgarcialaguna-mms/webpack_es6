@@ -15,6 +15,7 @@
   },
   "scripts": {
     "build": "webpack",
+    "build_production": "webpack --config webpack.production.js",
     "dev": "webpack-dev-server --inline --port 3000"
   },
   "babel": {
