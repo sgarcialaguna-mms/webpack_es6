@@ -1,6 +1,7 @@
 /* jshint node:true */
 
 var path = require('path');
+var BundleTracker = require('webpack-bundle-tracker')
 
 module.exports = {
     context: path.join(__dirname, 'js'),
@@ -16,13 +17,17 @@ module.exports = {
     resolve: {
         root: [path.join(__dirname, 'js')]
     },
-    
+
     module: {
         loaders: [{
             test: require.resolve('angular'),
             loader: 'exports?angular'
         }]
     },
+
+    plugins: [
+        new BundleTracker({filename: './webpack-stats.json'})
+    ],
 
     devtool: 'eval'
 };
