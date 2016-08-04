@@ -6,3 +6,5 @@ I used the AngularJS + RequireJS example from TodoMVC as a starting point: http:
 
 This presentation by Kent C. Dodds takes a similar approach (and inspired my own talk),
 it doesn't cover Django however: https://www.youtube.com/watch?v=NEJyIBwo-ik
+ 
+I also liked his ES6 workshop: https://www.youtube.com/watch?v=_Pn32tTtbuQ
