@@ -19,10 +19,16 @@ module.exports = {
     },
 
     module: {
-        loaders: [{
-            test: require.resolve('angular'),
-            loader: 'exports?angular'
-        }]
+        loaders: [
+            {
+                test: require.resolve('angular'),
+                loader: 'exports?angular'
+            },
+            {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/
+            }]
     },
 
     plugins: [
